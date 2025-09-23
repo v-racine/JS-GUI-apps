@@ -1,0 +1,123 @@
+<!-- Basic Template -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <style>
+      body {
+        background: #335;
+      }
+
+      h1 {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+      }
+
+      div {
+        display: block;
+        unicode-bidi: isolate;
+      }
+
+      figure {
+        width: 22%;
+        margin-left: 2%;
+        display: inline-block;
+        margin-bottom: 20px;
+        vertical-align: top;
+        padding: 10px;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 3px;
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+
+      figcaption {
+        opacity: 0;
+        transition: all 0.3s;
+        position: absolute;
+        width: 300px;
+        padding: 10px;
+        height: 150px;
+        border-radius: 4px;
+        background: rgba(0, 0, 20, 0.7);
+        color: #fff;
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      figcaption.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Exotic Animals</h1>
+    <div id="exotic_animals">
+      <figure>
+        <img
+          src="images/quetzal.jpg"
+          alt="A brightly colored bird with a long tail flies through the forest."
+        />
+        <figcaption>
+          Quetzal are found in forests and woodlands, especially in humid
+          highlands, with the five species from the genus Pharomachrus being
+          exclusively Neotropical, while the single Euptilotis species is found
+          in Mexico and very locally in southern United States
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/blackbuck.jpg"
+          alt="A brown and white antelope with long spiral horns stands in grass."
+        />
+        <figcaption>
+          The blackbuck, also known as the Indian antelope, is an antelope found
+          in Pakistan, India and Nepal. The blackbuck is the sole extant member
+          of the genus Antilope. The species was described and given its
+          binomial name by Swedish zoologist Carl Linnaeus in 1758.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/golden_pheasant.jpg"
+          alt="A brightly colored yellow, red, and blue bird with intricate feather patterns."
+        />
+        <figcaption>
+          The golden pheasant or Chinese pheasant (Chrysolophus pictus) is a
+          gamebird of the order Galliformes (gallinaceous birds) and the family
+          Phasianidae (pheasants). It is native to forests in mountainous areas
+          of western China.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="images/greater_bird_of_paradise.jpg"
+          alt="An exotic bird with deep burgundy and yellow feathers stands on a concrete wall."
+        />
+        <figcaption>
+          The greater bird-of-paradise (Paradisaea apoda) is a bird-of-paradise
+          in the genus Paradisaea. The greater bird-of-paradise is the largest
+          member in the genus Paradisaea, with males measuring up to 43 cm (17
+          in) (excluding the long twin tail wires). The female is smaller, at
+          only 35 cm (14 in).
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+  <script src="Exotic_Animals.js"></script>
+</html>

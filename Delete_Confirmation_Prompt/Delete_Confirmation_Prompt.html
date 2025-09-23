@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+    <style>
+      body {
+        background: #226543;
+        padding: 20px;
+        color: #000;
+        font-size: 18px;
+      }
+
+      body {
+        display: block;
+        margin: 8px;
+      }
+
+      h2 {
+        color: #fff;
+      }
+
+      h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+      }
+
+      .todos {
+        list-style: none;
+        width: 600px;
+      }
+
+      ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+      }
+
+      .todos li {
+        padding: 16px 20px 0 20px;
+        box-sizing: border-box;
+        background: #fff;
+        color: #222;
+        height: 50px;
+        margin-bottom: 20px;
+        text-indent: 0;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        unicode-bidi: isolate;
+      }
+
+      .overlay {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .confirm_prompt {
+        display: none;
+        width: 500px;
+        height: 150px;
+        position: absolute;
+        z-index: 10;
+        top: 150px;
+        left: 50%;
+        margin-left: -200px;
+        border: 1px solid #ccc;
+        background: #eee;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      span.remove {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        transform: rotate(45deg);
+        right: 20px;
+        cursor: pointer;
+      }
+
+      span.remove:before {
+        height: 3px;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin-top: -1px;
+      }
+
+      span.remove:before,
+      span.remove:after {
+        background: #ec5555;
+        content: "";
+        position: absolute;
+      }
+
+      span.remove:after {
+        width: 3px;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        margin-left: -1px;
+      }
+
+      .action {
+        display: inline-block;
+        right: 20px;
+        bottom: 10px;
+        width: 60px;
+        height: 25px;
+        text-align: center;
+        padding-top: 8px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .confirm-yes {
+        background: #9f1331;
+      }
+
+      .confirm-no {
+        background: #226543;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Todos</h2>
+    <ul class="todos"></ul>
+    <div class="overlay"></div>
+    <div class="confirm_prompt"></div>
+  </body>
+
+  <script src="Delete_Confirmation_Prompt.js"></script>
+</html>
